@@ -6,7 +6,7 @@ last_cpu = 0
 last_ram = 0 
 last_disk = 0 #Still need to find average if disk size is changing
 
-
+starttime = time.time()
 try: 
     print("Press Ctrl+C to exit")
     print("-------------------------")
@@ -29,8 +29,10 @@ try:
         time.sleep(2)  #sleep 2 seconds to make more readable. CPU check is + 1 second. Therefore 3 second intervals.
 
 except KeyboardInterrupt: #After Ctrl+C is pressed
-    print("Session ended")
+    endtime = time.time()
+    print(f"Session ended -- Length: {(endtime-starttime):.1f}s") #Outputs session length in seconds
+
     print(f"Average CPU Activity of Session: {monitor.cpu.get_cpu_average(inc, last_cpu):.1f}%")
     print(f"Average RAM Activity of Session: {monitor.memory.get_ram_average(inc, last_ram):.1f}%")
-    print(f"Average DISK Capacity of Session: {monitor.disk.get_disk_average(inc, last_disk):.1f}%")
+    print(f"Average used DISK Capacity of Session: {monitor.disk.get_disk_average(inc, last_disk):.1f}%")
 
