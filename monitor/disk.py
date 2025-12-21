@@ -6,3 +6,9 @@ def get_disk_percent():
 
 def get_disk_average(inc, added_disk):
     return (added_disk / inc)
+
+def did_spike(last, new):
+    if new >= last + 15 and last != 0:
+        return True
+    else:
+        return False
