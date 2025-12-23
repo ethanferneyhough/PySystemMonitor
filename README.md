@@ -1,13 +1,13 @@
 PySystemMonitor is a lightweight Python system monitoring tool that tracks CPU, RAM, and Disk usage and displays a
 live output to the user in a streamlit dashboard and/or the terminal.
 
-    -Live CPU/RAM/Disk metrics
-    -Trackable history over time
-    -Optional Streamlit and/or terminal output
-    -Graphing of history of output over time.
-    -Warning messages if metrics spike.
-    -Terminal averages for metrics after session
-    -Session length timer
+-Live CPU/RAM/Disk metrics
+-Trackable history over time
+-Optional Streamlit and/or terminal output
+-Graphing of history of output over time.
+-Warning messages if metrics spike.
+-Terminal averages for metrics after session
+-Session length timer
 
 Installation:
 
