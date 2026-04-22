@@ -1,3 +1,5 @@
+<img width="1280" height="680" alt="pythonpic" src="https://github.com/user-attachments/assets/8925ecf3-a3aa-4141-bfec-531f38cadb9a" /><img width="1280" height="740" alt="1769916446445" src="https://github.com/user-attachments/assets/3d6c3d96-f2d9-4008-8326-6bcc55a0455e" />
+
 PySystemMonitor is a lightweight Python system monitoring tool that tracks CPU, RAM, and Disk usage and displays a
 live output to the user in a streamlit dashboard and/or the terminal.
 
